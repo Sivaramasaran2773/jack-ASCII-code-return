@@ -1,0 +1,23 @@
+class Main {
+  function void main() {
+    var int key;
+    
+    while (true) {
+      let key = Keyboard2.keyPressed();
+      if (~(key = 0)) {
+
+        do Output.printString("Entered character :");
+        do Output.printChar(key);
+        do Output.println();
+        do Output.printString("ASCII code: :");
+
+      }
+        do Output.printInt(key);
+      
+      do Sys.wait(500);
+      do Screen.clearScreen();
+      do Output.moveCursor(0, 0);
+    }
+    return;
+  }
+}

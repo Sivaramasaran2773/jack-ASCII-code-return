@@ -1,0 +1,55 @@
+class Main {
+
+    function void main() {
+    	var char c, key;
+    	var String s;
+    	var int i;
+    	var boolean ok;
+
+	    let ok = true;
+        do Output.printString("JACK Program to return the ASCII code of character");
+        do Output.println();
+        do Output.println();
+        do Output.printString("INSTRUCTIONS: ");
+        do Output.println();
+        do Output.printString("1.Press any key to test the program. ");
+        do Output.println();
+        do Output.printString("2.Press the space key to stop program. ");
+        do Output.println();
+        do Output.println();
+
+        while (ok) {
+        	do Output.printString("Enter the Character: ");
+    	    let c = Keyboard.readChar();
+    	    
+    	    
+            do Output.println();
+            do Output.printString("ASCII Value of Entered Character: ");
+            do Output.printInt(c);
+            do Output.println();
+            do Output.println();
+
+            if (c = 130){
+    	    	do Screen.clearScreen();
+    	    	do Output.moveCursor(0,0);
+    	    }
+
+
+    	     if (c = 32) {
+            	do Output.printString("Space");
+            	do Output.println();
+	            do Output.printString("Program Terminated");
+	            do Output.println();
+	            do Sys.halt();
+	        }
+
+	    
+	    
+	
+
+		}
+        
+        return;
+    }
+}
+

@@ -1,0 +1,6 @@
+class Keyboard2 {
+  
+  function char keyPressed() {
+    return Memory.peek(24576);
+  }
+}
